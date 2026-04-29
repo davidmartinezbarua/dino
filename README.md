@@ -1,6 +1,6 @@
 # Dino Service
 
-Microservicio REST para gestión ABM de dinosaurios. Se implemento un scheduler cada 10 minutos que actualiza automaticamente los estados de los dinosaurios (ALIVE - ENDANGERED - EXTINCT).
+Microservicio REST para gestión de dinosaurios. El Servicio expone endpoints REST para los ABM. Se implemento un scheduler cada 10 minutos que actualiza automaticamente los estados de los dinosaurios (ALIVE - ENDANGERED - EXTINCT).
 Cada cambio de estado genera un mensaje en RabbitMQ (topic dinosaur.status).
 El proyecto sigue arquitectura hexagonal con separacion entre dominio, aplicación e infraestructura.
 
